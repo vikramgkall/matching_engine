@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.22.1)
+project (matching_engine)
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} /std:c++17")
+add_executable(matching_engine main.cpp)
+target_link_libraries(matching_engine Ws2_32.lib)
